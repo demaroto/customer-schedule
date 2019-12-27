@@ -11,6 +11,8 @@ http.createServer((req, res)=>{
 
     var urlName = url.parse(req.url, true).pathname
 
+    console.log(urlName)
+
     res.write('' + routes.handleRoutes(urlName))
 
     res.end()
