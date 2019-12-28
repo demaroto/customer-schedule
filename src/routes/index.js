@@ -12,10 +12,11 @@ exports.handleRoutes = url => {
         break
 
         case '/resources/css/main.css':
-           return fs.readFileSync(process.cwd() + '/src/resources/css/main.css', 'utf8', (err, html)=>{
-                if(err)
-                    console.log(err)        
-            })
+            
+                 return fs.readFileSync(process.cwd() + '/src/resources/css/main.css', 'utf8', (err, html)=>{
+                    if(err)
+                        console.log(err)        
+                 })
         break
     }
 };

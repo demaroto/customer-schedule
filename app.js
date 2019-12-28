@@ -11,7 +11,8 @@ http.createServer((req, res)=>{
 
     var urlName = url.parse(req.url, true).pathname
 
-    console.log(urlName)
+    if(urlName == '/resources/css/main.css')
+        res.writeHead(200, {'Content-Type': 'text/css'})
 
     res.write('' + routes.handleRoutes(urlName))
 
