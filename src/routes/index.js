@@ -18,6 +18,14 @@ exports.handleRoutes = url => {
                         console.log(err)        
                  })
         break
+
+        case '/resources/js/main.js':
+            
+                 return fs.readFileSync(process.cwd() + '/src/resources/js/main.js', 'utf8', (err, html)=>{
+                    if(err)
+                        console.log(err)        
+                 })
+        break
     }
 };
 

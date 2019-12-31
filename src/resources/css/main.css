@@ -28,17 +28,53 @@
 #header-menu{
 
     float:right;
-    margin-top:61px;
-    margin-right:5%;
-
-}
-
-#header-menu a{
-
-    padding:50px 25px 50px 25px;
-    border:1px solid;
-    font-size:18.72px;
-    text-decoration:none;
+    margin-top:41px;
+    cursor:pointer;
+    display:block;
     
 }
+
+#header-menu-close{
+    
+    margin-top: 61px;
+    display:none;
+    width:700px;
+    float:right;
+
+}
+
+#header-menu-close a {
+    
+    font-size:18px;
+    text-decoration: none;
+    border:1px solid;
+    padding: 25px 45px 25px 45px;
+    background-color:#FFFFFF;
+    color:#3CB371;
+    border:none;
+    border-radius:80px;
+    
+}
+
+#header-menu-close a:hover{
+
+    border:1px solid #FFFFFF;
+
+}
+
+/* Trocando menu para tablets e maiores telas */
+
+@media screen and (min-width: 980px) {
+
+    #header-menu-close{
+        display:block;
+    }
+
+    #header-menu{
+        display:none;
+    }
+    
+
+}
+  
 
