@@ -1,6 +1,9 @@
-const http = require("http")
-const url = require('url')
-const routes = require("./src/routes/index")
+/* const http = require("http")
+const url = require('url') */
+import * as http from "http"
+import * as url from "url"
+import * as routes from "./src/routes/index.js"
+//const routes =  require('./src/routes/index')
 
 const PORT = 8000
 

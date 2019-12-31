@@ -1,7 +1,8 @@
-const fs = require("fs");
+//const fs = require("fs");
+import * as fs from "fs"
 
 
-exports.handleRoutes = url => {
+export const handleRoutes = url => {
 
     switch(url){
         case '/':

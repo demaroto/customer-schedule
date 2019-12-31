@@ -1,4 +1,7 @@
+
+
 {
+  "type": "module",
   "name": "customer-schedule",
   "version": "1.0.0",
   "description": "An application to schedule customers",
