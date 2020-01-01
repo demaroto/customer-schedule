@@ -1,22 +1,23 @@
 export const handleMimeType = url =>{
 
-    const mimetypes = ['html', 'css', 'js']
-
     var ext = url.split('.')
-    var mimeType = mimetypes.indexOf(ext[1]);
 
-    switch(mimeType) {
+    switch(ext[1]) {
 
-        case 0:
+        case 'html':
             return 'text/html'
         break
 
-        case 1:
+        case 'css':
             return 'text/css'
         break
 
-        case 2:
+        case 'js':
             return 'text/javascript'
+        break
+
+        case 'png':
+            return 'image/png'
         break
 
         default:
